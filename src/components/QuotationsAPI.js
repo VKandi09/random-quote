@@ -27,12 +27,6 @@ export const QuotationsAPI = () => {
           <p className="text-author">- {value.author}</p>
           <i className='bx bxs-quote-alt-right right-quote'></i>
         </div>
-        <div className="circles">
-          <div className="circle-1"></div>
-          <div className="circle-2"></div>
-          <div className="circle-3"></div>
-          <div className="circle-4"></div>
-        </div>
       <button
         onClick={getQuotes}
       >
