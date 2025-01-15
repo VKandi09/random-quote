@@ -9,7 +9,7 @@ export const QuotationsAPI = () => {
 
   async function getQuotes() {
     try {
-        const response = await fetch('https://api.quotable.io/random'); 
+        const response = await fetch('https://programming-quotes-api.azurewebsites.net/api/quotes/random'); 
         const data = await response.json();
         setValue(data);
     } catch (error) {
@@ -23,7 +23,7 @@ export const QuotationsAPI = () => {
         <h1>Quote .</h1>
         <div className="quote">
           <i className='bx bxs-quote-alt-left left-quote'></i>
-          <p>{value.content}</p>
+          <p>{value.text}</p>
           <p className="text-author">- {value.author}</p>
           <i className='bx bxs-quote-alt-right right-quote'></i>
         </div>
