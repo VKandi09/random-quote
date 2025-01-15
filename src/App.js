@@ -1,5 +1,5 @@
 import './App.css';
-import { QuotationsAPI } from './components/quotationsAPI.js';
+import { QuotationsAPI } from './components/QuotationsAPI.js';
 
 function App() {
   return (
